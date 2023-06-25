@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500&display=swap');
+
+.top-section {
+    height: 900px;
+    background-image: url("./images/castelmezzano.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a4bcec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
+.content-padding {
+    padding: 196px 104px 120px 104px;
+}
+
+.nav {
+    padding: 51px 104px 0 104px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    width: 205px;
+    background-image: url("./images/logo-more.png");
+    background-size: cover;
+}
+
+.sections {
+    max-width: 343px;
+    display: flex;
+    gap: 48px;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+.night {
+    min-height: 30px;
+    min-width: 30px;
+    background-image: url("./images/logo-more.png");
+    background-size: cover;
+    background-position-x: 71px;
+}
+
+.account {
+    max-height: 40px;
+    max-width: 40px;
+    background-image: url("./images/logo-more.png");
+    width: 277px;
+    height: 40px;
+    background-size: cover;
+    background-position-x: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+
+button {
+    width: 192px;
+    height: 64px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #3077C6;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.forms {
+    height: 64px;
+    background-color: #ffffff;
+    margin-top: 24px;
+}
+
+.form-name {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+._name-margin {
+    margin-right: 221px;
+}
+
+._form-settings {
+    height: 64px;
+    padding: 0;
+    border: none;
+}
+
+.form-country {
+    width: 467px;
+}
+
+.form-date {
+    width: 259px;
+}
+
+.form-people {
+    width: 314px;
+}
+
+.apps {
+    width: 270px;
+    height: 40px;
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.google {
+    width: 135px;
+    background-image: url("./images/apps.png");
+}
+
+.app-store {
+    width: 120px;
+    background-image: url("./images/apps.png");
+    background-position-x: 120px;
+}
