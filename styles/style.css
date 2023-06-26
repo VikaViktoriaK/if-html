@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 h2 {
     font-size: 40px;
     font-weight: 500;
@@ -22,20 +24,27 @@ hr {
 
 .offers-group {
     display: flex;
-    margin: 80px 104px 114px 104px;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 80px;
+    margin-bottom: 114px;
 
 }
 
 .offers {
     width: 296px;
-    height: 183px;
-    justify-content: center;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: space-between;
 }
 
-.img-offer {
-    display: block;
-    margin: auto;
+.img-size {
+    width: 100px;
+    height: 100px;
+    margin: 0;
 }
 
 .img-headph {
@@ -65,7 +74,6 @@ hr {
 .text_offer {
     font-size: 24px;
     font-weight: 400;
-    text-align: center;
 }
 
 
