@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&family=Roboto:ital,wght@0,400;1,500&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 h2 {
@@ -17,6 +32,7 @@ h2 {
   width: 100px;
   height: 4px;
   border: none;
+  margin: 0 auto;
 }
 
 .offers-group {
@@ -38,9 +54,12 @@ h2 {
 }
 
 .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
-  margin: 0;
+  margin-bottom: 48px;
 }
 
 .img-headph {
@@ -70,4 +89,45 @@ h2 {
 .text-offer {
   font-size: 24px;
   font-weight: 400;
+}
+
+.container {
+  max-width: 1264px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #10367c;
+  height: 625px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.list-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.list-link {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.inc {
+  font-size: 14px;
+  color: #ffffff;
 }

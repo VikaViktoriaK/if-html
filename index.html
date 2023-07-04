@@ -2,152 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Page for working out lists, tables, forms"
-    />
-    <meta name="keywords" content="lists, tables, forms" />
-    <meta name="author" content="Viktoria Kolosova" />
-    <title>Lesson-3</title>
+    <title>TripHouse</title>
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <img
-      src="data:image/jpeg;base64,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"
-      alt="little kat"
-    />
-    <ol>
-      <li>
-        Знакомство с Web
-        <ul>
-          <li>Краткая история Web и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницы по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>О файле .gitignore.</li>
-        </ul>
-      </li>
-      <li>
-        HTML-верстка - первые шаги
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история HTML.</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Теги для работы с текстом.</li>
-          <li>Создание собственной страницы</li>
-        </ul>
-      </li>
-      <li>
-        Погружение в HTML разметку
-        <ul>
-          <li>Мета-теги.</li>
-          <li>Мнемоники.</li>
-          <li>Теги для работы с изображениями.</li>
-          <li>Теги для работы со списками.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с формами.</li>
-          <li>Div-блоки</li>
-        </ul>
-      </li>
-    </ol>
-    <table border="1" width="50%">
-      <tr>
-        <th>Tag</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>&lt;table&gt;</td>
-        <td>Defines a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tr&gt;</td>
-        <td>Defines a row in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;th&gt;</td>
-        <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;td&gt;</td>
-      </tr>
-      <tr>
-        <td colspan="2">Rarely used</td>
-      </tr>
-      <tr>
-        <td>&lt;caption&gt;</td>
-        <td>Defines a table caption</td>
-      </tr>
-      <tr>
-        <td>&lt;thead&gt;</td>
-        <td>Groups the header content in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tbody&gt;</td>
-        <td>Groups the body content in a table</td>
-      </tr>
-      <tr>
-        <td>&lt;tfoot&gt;</td>
-        <td>Groups the foot content in a table</td>
-      </tr>
-    </table>
-    <br />
-    <form action="/" method="get">
-      <fieldset>
-        <legend>My first form</legend>
-        <div>
-          <label for="name">Name</label><br />
-          <input
-            required
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Name"
-          /><br />
-          <label for="email">Email</label><br />
-          <input required id="email" name="email" type="email" /><br />
-          <label for="password">Password</label><br />
-          <input required id="password" name="password" type="password" />
+  <div class="container">
+    <h2>What do we offer</h2>
+    <hr class="hr-offer" />
+    <div class="offers-group">
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/headph.png" alt="headphone" />
         </div>
-        <div>
-          <label for="level">Your programming level</label><br />
-          <input id="level" type="range" name="prog-level" min="1" max="10" />
+        <p class="text-offer">Support 24/7</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/message.png" alt="message" />
         </div>
-        <div>
-          <p>What does HTML stand for?</p>
-          <input name="html-1" id="html-1" type="checkbox" />
-          <label for="html-1">Hyperlinks and Text Markup Language</label><br />
-          <input name="html-2" id="html-2" type="checkbox" />
-          <label for="html-2">Home Tool Markup Language</label><br />
-          <input name="html-3" id="html-3" type="checkbox" />
-          <label for="html-3">Hyper Text Markup Language</label>
+        <p class="text-offer">Communicate directly</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/laptop.png" alt="laptop" />
         </div>
-        <div>
-          <p>What does HTTP stand for?</p>
-          <input name="http" id="http-1" type="radio" />
-          <label for="http-1">Hyper Text Translate Protocol</label><br />
-          <input name="http" id="http-2" type="radio" />
-          <label for="http-2">Hyper Text Transmission Protocol</label><br />
-          <input name="http" id="http-3" type="radio" />
-          <label for="http-3">Hyper Text Transfer Protocol</label>
+        <p class="text-offer">Book online</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/cool.png" alt="cool" />
         </div>
-        <div>
-          <label for="comment">
-            Comment <br />
-            <textarea id="comment">Comment</textarea>
-          </label>
+        <p class="text-offer">Real guest reviews</p>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <ul class="links-list">
+            <li><a class="list-heading">About</a></li>
+            <li><a class="list-link">How Triphouse works</a></li>
+            <li><a class="list-link">Careers</a></li>
+            <li><a class="list-link">Privacy</a></li>
+            <li><a class="list-link">Terms</a></li>
+          </ul>
+          <ul class="links-list">
+            <li><a class="list-heading">Property types</a></li>
+            <li><a class="list-link">Guest houses</a></li>
+            <li><a class="list-link">Hotels</a></li>
+            <li><a class="list-link">Apartments</a></li>
+            <li><a class="list-link">Villas</a></li>
+            <li><a class="list-link">Holiday homes</a></li>
+            <li><a class="list-link">Hostels</a></li>
+          </ul>
+          <ul class="links-list">
+            <li><a class="list-heading">Support</a></li>
+            <li><a class="list-link">Contact Customer Service</a></li>
+            <li><a class="list-link">FAQ</a></li>
+          </ul>
         </div>
-        <div>
-          <label for="select">What does HTML stand for?</label><br />
-          <select id="select" name="html">
-            <option disabled selected>Your answer</option>
-            <option>Hyperlinks and Text Markup Language</option>
-            <option>Home Tool Markup Language</option>
-            <option>Hyper Text Markup Language</option>
-          </select>
-        </div>
-        <br />
-        <div><button>Send</button></div>
-      </fieldset>
-    </form>
-    <hr />
+        <span class="inc">&#169; 2022Triphouse, Inc. All rights reserved</span>
+      </div>
+    </footer>
   </body>
 </html>
