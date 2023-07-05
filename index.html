@@ -2,41 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>About</title>
+    <title>TripHouse</title>
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <h1>About me</h1>
-    <h2>Kolosova Victoria Alexandrovna</h2>
-    <blockquote>Never say never</blockquote>
-    <p><strong>Education: electronic marketing PSU</strong></p>
-    <hr />
-    <p>
-      <mark>Contacts</mark>
-    </p>
-    <a href="mailto:vikakolosova04@gmail.com">vikakolosok04@gmail.com</a><br />
-    <a href="https://github.com/VikaViktoriaK">My github</a>
-    <hr />
-    <h3>Why frontend?</h3>
-    <p>
-      Frontend gives an opportunity to realize creative ideas. <br />Front-end
-      developer is a creative profession that I love.
-    </p>
-    <hr />
-    <p>
-      <mark>My strengths</mark>
-    </p>
-    <p>&#128076; <em>Good knowledge base in mathematics</em></p>
-    <p>&#9878; I am able to make informed decisions</p>
-    <p>&#128187; Eagerness to learn and discover new things</p>
-    <hr />
-    <p>
-      <mark>
-        <del>My weaknesses</del>
-      </mark>
-    </p>
-    <p>
-      <ins>Not punctual</ins>
-    </p>
-    <p>I don't like <sub>indexes</sub> and <sup>degrees</sup></p>
+  <div class="top-section">
+    <header class="header">
+      <div class="logo"></div>
+      <div class="sections">
+        <div class="links">
+          <a href="#">Stays</a>
+          <a href="#">Attractions</a>
+        </div>
+        <div class="icons">
+          <div class="night"></div>
+          <div class="account"></div>
+        </div>
+      </div>
+    </header>
+    <div class="top-content">
+      <h1>Discover stays <br />to live, work or just relax</h1>
+      <form class="form">
+        <div class="form-elements country">
+          <label for="country">Your destination or hotel name</label>
+          <input id="country" type="text" placeholder="New York" />
+        </div>
+        <div class="form-elements date">
+          <label for="date">Check-in — Check-out</label>
+          <input
+                  id="date"
+                  type="text"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+          />
+        </div>
+        <div class="form-elements options">
+          <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
+        </div>
+        <button class="form-button">Search</button>
+      </form>
+      <div class="apps">
+        <div class="google"></div>
+        <div class="app-store"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>What do we offer</h2>
+    <hr class="hr-offer" />
+    <div class="offers-group">
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/headph.png" alt="headphone" />
+        </div>
+        <p class="text-offer">Support 24/7</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/message.png" alt="message" />
+        </div>
+        <p class="text-offer">Communicate directly</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/laptop.png" alt="laptop" />
+        </div>
+        <p class="text-offer">Book online</p>
+      </div>
+      <div class="offers-item">
+        <div class="img-wrapper">
+          <img src="../images/cool.png" alt="cool" />
+        </div>
+        <p class="text-offer">Real guest reviews</p>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-links">
+          <ul class="links-list">
+            <li><a class="list-heading">About</a></li>
+            <li><a class="list-link">How Triphouse works</a></li>
+            <li><a class="list-link">Careers</a></li>
+            <li><a class="list-link">Privacy</a></li>
+            <li><a class="list-link">Terms</a></li>
+          </ul>
+          <ul class="links-list">
+            <li><a class="list-heading">Property types</a></li>
+            <li><a class="list-link">Guest houses</a></li>
+            <li><a class="list-link">Hotels</a></li>
+            <li><a class="list-link">Apartments</a></li>
+            <li><a class="list-link">Villas</a></li>
+            <li><a class="list-link">Holiday homes</a></li>
+            <li><a class="list-link">Hostels</a></li>
+          </ul>
+          <ul class="links-list">
+            <li><a class="list-heading">Support</a></li>
+            <li><a class="list-link">Contact Customer Service</a></li>
+            <li><a class="list-link">FAQ</a></li>
+          </ul>
+        </div>
+        <span class="inc">&#169; 2022Triphouse, Inc. All rights reserved</span>
+      </div>
+    </footer>
   </body>
 </html>

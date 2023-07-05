@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&family=Roboto:ital,wght@0,400;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+input {
+  outline:none;
+}
+
+.top-section {
+  height: 100vh;
+  background-image: url("../images/castelmezzano.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #a4bcec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center 15%;
+}
+
+.top-content {
+  margin: 196px 104px 196px 104px;
+  height: 487px;
+}
+
+.header {
+  padding: 51px 104px 0 104px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 205px;
+  background-image: url("../images/logo-more.png");
+  background-size: cover;
+}
+
+.sections {
+  max-width: 343px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
+
+.night {
+  min-height: 30px;
+  min-width: 30px;
+  background-image: url("../images/logo-more.png");
+  background-size: cover;
+  background-position-x: 71px;
+}
+
+.account {
+  max-height: 40px;
+  max-width: 40px;
+  background-image: url("../images/logo-more.png");
+  width: 277px;
+  height: 40px;
+  background-size: cover;
+  background-position-x: 40px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form-button {
+  width: 192px;
+  height: 64px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #3077C6;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form {
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 130px;
+}
+
+.form-name {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+._name-margin {
+  margin-right: 221px;
+}
+
+._form-settings {
+  height: 64px;
+  padding: 0;
+  border: none;
+}
+
+.apps {
+  width: 270px;
+  height: 40px;
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.google {
+  width: 135px;
+  background-image: url("../images/apps.png");
+}
+
+.app-store {
+  width: 120px;
+  background-image: url("../images/apps.png");
+  background-position-x: 120px;
+}
+
+.form-elements {
+  position: relative;
+}
+
+.country {
+  width: 39.5%;
+}
+
+.date {
+  width: 21%;
+  position: relative;
+}
+
+.options {
+  width: 27%;
+}
+
+.form-elements input::placeholder {
+  font-size: 18px;
+  color: #000000;
+}
+
+.form-elements input{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+.form-elements label{
+  position: absolute;
+  top: -36px;
+  left: 15px;
+  color: #ffffff;
+}
+
+.form-elements input:focus {
+  border: 3px solid #F5BD41;
+}
+
+.hr-offer {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  border: none;
+  margin: 0 auto;
+}
+
+.offers-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 80px;
+  margin-bottom: 114px;
+}
+
+.offers-item {
+  width: 296px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 48px;
+}
+
+.img-headph {
+  width: 75px;
+  height: 92px;
+  margin-bottom: 52px;
+}
+
+.img-mess {
+  width: 83px;
+  height: 92px;
+  margin-bottom: 56px;
+}
+
+.img-laptop {
+  width: 100px;
+  height: 67px;
+  margin-bottom: 65px;
+}
+
+.img-cool {
+  width: 92px;
+  height: 83px;
+  margin-bottom: 61px;
+}
+
+.text-offer {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1264px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #10367c;
+  height: 625px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.list-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.list-link {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.inc {
+  font-size: 14px;
+  color: #ffffff;
+}
