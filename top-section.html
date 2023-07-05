@@ -10,37 +10,41 @@
       <div class="nav">
         <div class="logo"></div>
         <div class="sections">
-        <div class="links">
-          <a href="#">Stays</a>
-          <a href="#">Attractions</a>
-        </div>
-        <div class="icons">
-          <div class="night"></div>
-          <div class="account"></div>
-        </div>
+          <div class="links">
+            <a href="#">Stays</a>
+            <a href="#">Attractions</a>
+          </div>
+          <div class="icons">
+            <div class="night"></div>
+            <div class="account"></div>
+          </div>
         </div>
       </div>
-      <div class="content-padding">
+      <div class="top-content">
         <h1>Discover stays <br />to live, work or just relax</h1>
-        <label class="form-name _name-margin">Your destination or hotel name</label>
-        <label class="form-name">Check-in — Check-out</label>
-        <form class="forms">
-          <label for="country">
-            <input class="form-country _form-settings" id="country" name="New York" type="text" />
-          </label>
-          <label for="date">
-            <input class="form-date _form-settings" id="date" name="New York" type="text" />
-          </label>
-          <label for="people">
-            <input class="form-people _form-settings" id="people" name="New York" type="text" />
-          </label>
-          <button>Search</button>
+        <form class="form">
+          <div class="form-elements country">
+            <label for="country">Your destination or hotel name</label>
+            <input id="country" type="text" placeholder="New York" />
+          </div>
+          <div class="form-elements date">
+            <label for="date">Check-in — Check-out</label>
+            <input
+              id="date"
+              type="text"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+          </div>
+          <div class="form-elements options">
+            <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
+          </div>
+          <button class="form-button">Search</button>
         </form>
+          <div class="apps">
+              <div class="google"></div>
+              <div class="app-store"></div>
+          </div>
       </div>
-      <div class="apps">
-        <div class="google"></div>
-        <div class="app-store"></div>
       </div>
-    </div>
   </body>
 </html>

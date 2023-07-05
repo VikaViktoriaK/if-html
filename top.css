@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline:none;
+}
+
 .top-section {
-    height: 900px;
+    height: 100vh;
     background-image: url("./images/castelmezzano.png") ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-clip: border-box;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
     background-color: #a4bcec;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 120px;
+    background-position: center 15%;
 }
 
-.content-padding {
-    padding: 196px 104px 120px 104px;
+.top-content {
+    margin: 196px 104px 196px 104px;
+    height: 487px;
+
 }
 
 .nav {
@@ -35,6 +45,7 @@
 .sections {
     max-width: 343px;
     display: flex;
+    align-items: center;
     gap: 48px;
 }
 
@@ -77,10 +88,9 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     color: #ffffff;
-    padding-bottom: 100px;
 }
 
-button {
+.form-button {
     width: 192px;
     height: 64px;
     padding: 0;
@@ -92,10 +102,13 @@ button {
     color: #ffffff;
 }
 
-.forms {
+.form {
     height: 64px;
     background-color: #ffffff;
-    margin-top: 24px;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 130px;
 }
 
 .form-name {
@@ -112,18 +125,6 @@ button {
     height: 64px;
     padding: 0;
     border: none;
-}
-
-.form-country {
-    width: 467px;
-}
-
-.form-date {
-    width: 259px;
-}
-
-.form-people {
-    width: 314px;
 }
 
 .apps {
@@ -144,3 +145,46 @@ button {
     background-image: url("./images/apps.png");
     background-position-x: 120px;
 }
+
+.form-elements {
+    position: relative;
+}
+
+.country {
+    width: 39.5%;
+}
+
+.date {
+    width: 21%;
+    position: relative;
+}
+
+.options {
+    width: 27%;
+}
+
+.form-elements input::placeholder {
+    font-size: 18px;
+    color: #000000;
+}
+
+.form-elements input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    padding-left: 24px;
+    font-size: 18px;
+}
+
+.form-elements label{
+position: absolute;
+    top: -36px;
+    left: 15px;
+    color: #ffffff;
+}
+
+.form-elements input:focus {
+    border: 3px solid #F5BD41;
+}
+
