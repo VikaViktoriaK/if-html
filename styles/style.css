@@ -19,6 +19,13 @@ li {
   list-style-type: none;
 }
 
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 h2 {
   font-size: 40px;
   font-weight: 500;
@@ -26,6 +33,14 @@ h2 {
   margin-top: 120px;
   margin-bottom: 20px;
 }
+
+a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 input {
   outline:none;
@@ -44,57 +59,56 @@ input {
   background-position: center 15%;
 }
 
+.container {
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
 .top-content {
-  margin: 196px 104px 196px 104px;
-  height: 487px;
+  margin-top: 196px;
 }
 
 .header {
-  padding: 51px 104px 0 104px;
+  padding-top: 51px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
+.header-logo {
   height: 40px;
   width: 205px;
   background-image: url("../images/logo-more.png");
   background-size: cover;
 }
 
-.sections {
+.header-sections {
   max-width: 343px;
   display: flex;
   align-items: center;
   gap: 48px;
 }
 
-.links {
+.header-links {
   display: flex;
   gap: 24px;
 }
 
-a {
-  font-size: 24px;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.icons {
+.header-buttons{
   display: flex;
   gap: 24px;
 }
 
-.night {
+.button-night {
   min-height: 30px;
   min-width: 30px;
   background-image: url("../images/logo-more.png");
   background-size: cover;
   background-position-x: 71px;
+  border: none;
+  background-color: transparent;
 }
 
-.account {
+.button-account {
   max-height: 40px;
   max-width: 40px;
   background-image: url("../images/logo-more.png");
@@ -102,12 +116,8 @@ a {
   height: 40px;
   background-size: cover;
   background-position-x: 40px;
-}
-
-h1 {
-  font-size: 50px;
-  font-weight: 500;
-  color: #ffffff;
+  border: none;
+  background-color: transparent;
 }
 
 .form-button {
@@ -176,7 +186,6 @@ h1 {
 
 .date {
   width: 21%;
-  position: relative;
 }
 
 .options {
@@ -272,7 +281,7 @@ h1 {
   font-weight: 400;
 }
 
-.container {
+.container-offer {
   max-width: 1264px;
   width: 100%;
   padding: 0 16px;
