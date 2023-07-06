@@ -10,6 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1264px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -59,11 +66,6 @@ input {
   background-position: center 15%;
 }
 
-.container {
-  padding-left: 104px;
-  padding-right: 104px;
-}
-
 .top-content {
   margin-top: 196px;
 }
@@ -82,7 +84,6 @@ input {
 }
 
 .header-sections {
-  max-width: 343px;
   display: flex;
   align-items: center;
   gap: 48px;
@@ -279,13 +280,6 @@ input {
 .text-offer {
   font-size: 24px;
   font-weight: 400;
-}
-
-.container-offer {
-  max-width: 1264px;
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
 }
 
 .footer {
