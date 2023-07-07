@@ -10,6 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1264px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -19,12 +26,196 @@ li {
   list-style-type: none;
 }
 
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 h2 {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
   margin-top: 120px;
   margin-bottom: 20px;
+}
+
+a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+input {
+  outline:none;
+}
+
+.top-section {
+  height: 100vh;
+  background-image: url("../images/castelmezzano.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #a4bcec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center 15%;
+}
+
+.top-content {
+  margin-top: 196px;
+}
+
+.header {
+  padding-top: 51px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 40px;
+  width: 205px;
+  background-image: url("../images/logo-more.png");
+  background-size: cover;
+}
+
+.header-sections {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header-links {
+  display: flex;
+  gap: 24px;
+}
+
+.header-buttons{
+  display: flex;
+  gap: 24px;
+}
+
+.button-night {
+  min-height: 30px;
+  min-width: 30px;
+  background-image: url("../images/logo-more.png");
+  background-size: cover;
+  background-position-x: 71px;
+  border: none;
+  background-color: transparent;
+}
+
+.button-account {
+  max-height: 40px;
+  max-width: 40px;
+  background-image: url("../images/logo-more.png");
+  width: 277px;
+  height: 40px;
+  background-size: cover;
+  background-position-x: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.form-button {
+  width: 192px;
+  height: 64px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #3077C6;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.form {
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 130px;
+}
+
+.form-name {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+._name-margin {
+  margin-right: 221px;
+}
+
+._form-settings {
+  height: 64px;
+  padding: 0;
+  border: none;
+}
+
+.apps {
+  width: 270px;
+  height: 40px;
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.google {
+  width: 135px;
+  background-image: url("../images/apps.png");
+}
+
+.app-store {
+  width: 120px;
+  background-image: url("../images/apps.png");
+  background-position-x: 120px;
+}
+
+.form-elements {
+  position: relative;
+}
+
+.country {
+  width: 39.5%;
+}
+
+.date {
+  width: 21%;
+}
+
+.options {
+  width: 27%;
+}
+
+.form-elements input::placeholder {
+  font-size: 18px;
+  color: #000000;
+}
+
+.form-elements input{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+.form-elements label{
+  position: absolute;
+  top: -36px;
+  left: 15px;
+  color: #ffffff;
+}
+
+.form-elements input:focus {
+  border: 3px solid #F5BD41;
 }
 
 .hr-offer {
@@ -89,13 +280,6 @@ h2 {
 .text-offer {
   font-size: 24px;
   font-weight: 400;
-}
-
-.container {
-  max-width: 1264px;
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
 }
 
 .footer {
