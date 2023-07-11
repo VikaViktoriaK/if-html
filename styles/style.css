@@ -76,61 +76,49 @@ input {
   justify-content: space-between;
 }
 
-.header-logo {
+.header__logo {
   height: 40px;
   width: 205px;
-  background-image: url("../images/logo-more.png");
+  background-image: url("../images/header.svg");
   background-size: cover;
 }
 
-.header-sections {
+.header__sections {
   display: flex;
   align-items: center;
   gap: 48px;
 }
 
-.header-links {
+.header__links {
   display: flex;
   gap: 24px;
 }
 
-.header-buttons{
+.header__buttons{
   display: flex;
   gap: 24px;
 }
 
-.button-night {
-  min-height: 30px;
+.header-buttons__night {
+  min-height: 40px;
   min-width: 30px;
-  background-image: url("../images/logo-more.png");
+  background-image: url("../images/header.svg");
   background-size: cover;
-  background-position-x: 71px;
+  background-position-x: 70px;
   border: none;
   background-color: transparent;
 }
 
-.button-account {
+.header-buttons__account {
   max-height: 40px;
   max-width: 40px;
-  background-image: url("../images/logo-more.png");
+  background-image: url("../images/header.svg");
   width: 277px;
   height: 40px;
   background-size: cover;
   background-position-x: 40px;
   border: none;
   background-color: transparent;
-}
-
-.form-button {
-  width: 192px;
-  height: 64px;
-  padding: 0;
-  border: none;
-  border-radius: 8px;
-  background-color: #3077C6;
-  font-size: 24px;
-  font-weight: 500;
-  color: #ffffff;
 }
 
 .form {
@@ -158,6 +146,18 @@ input {
   border: none;
 }
 
+.form__button {
+  width: 192px;
+  height: 64px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #3077C6;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .apps {
   width: 270px;
   height: 40px;
@@ -166,18 +166,18 @@ input {
   margin: 0 auto;
 }
 
-.google {
+.apps__google {
   width: 135px;
   background-image: url("../images/apps.png");
 }
 
-.app-store {
+.apps__app-store {
   width: 120px;
   background-image: url("../images/apps.png");
   background-position-x: 120px;
 }
 
-.form-elements {
+.form__elements {
   position: relative;
 }
 
@@ -193,12 +193,12 @@ input {
   width: 27%;
 }
 
-.form-elements input::placeholder {
+.form__elements input::placeholder {
   font-size: 18px;
   color: #000000;
 }
 
-.form-elements input{
+.form__elements input{
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -207,18 +207,18 @@ input {
   font-size: 18px;
 }
 
-.form-elements label{
+.form__elements label{
   position: absolute;
   top: -36px;
   left: 15px;
   color: #ffffff;
 }
 
-.form-elements input:focus {
+.form__elements input:focus {
   border: 3px solid #F5BD41;
 }
 
-.hr-offer {
+.offers__hr {
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
@@ -226,7 +226,7 @@ input {
   margin: 0 auto;
 }
 
-.offers-group {
+.offers__group {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -234,7 +234,7 @@ input {
   margin-bottom: 114px;
 }
 
-.offers-item {
+.offers__item {
   width: 296px;
   height: 176px;
   display: flex;
@@ -244,7 +244,7 @@ input {
   align-content: space-between;
 }
 
-.img-wrapper {
+.offers__img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,31 +253,31 @@ input {
   margin-bottom: 48px;
 }
 
-.img-headph {
+.offers__img-headph {
   width: 75px;
   height: 92px;
   margin-bottom: 52px;
 }
 
-.img-mess {
+.offers__img-mess {
   width: 83px;
   height: 92px;
   margin-bottom: 56px;
 }
 
-.img-laptop {
+.offers__img-laptop {
   width: 100px;
   height: 67px;
   margin-bottom: 65px;
 }
 
-.img-cool {
+.offers__img-cool {
   width: 92px;
   height: 83px;
   margin-bottom: 61px;
 }
 
-.text-offer {
+.offers__text {
   font-size: 24px;
   font-weight: 400;
 }
@@ -287,31 +287,31 @@ input {
   height: 625px;
 }
 
-.footer-links {
+.footer__links {
   display: flex;
   justify-content: space-between;
   padding-top: 120px;
   padding-bottom: 64px;
 }
 
-.links-list {
+.footer__links-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.list-heading {
+.footer__list-heading {
   font-size: 20px;
   font-weight: 500;
   color: #ffffff;
 }
 
-.list-link {
+.footer__list-link {
   font-size: 20px;
   color: #ffffff;
 }
 
-.inc {
+.footer__inc {
   font-size: 14px;
   color: #ffffff;
 }
