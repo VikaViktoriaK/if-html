@@ -53,6 +53,20 @@ input {
   outline:none;
 }
 
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 .top-section {
   height: 100vh;
   background-image: url("../images/castelmezzano.png") ;
@@ -228,10 +242,11 @@ input {
 
 .offers__group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  /*gap: 16px;*/
   margin-top: 80px;
-  margin-bottom: 114px;
+  padding-bottom: 114px;
 }
 
 .offers__item {
@@ -241,15 +256,14 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: space-between;
 }
 
 .offers__img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
   margin-bottom: 48px;
 }
 
@@ -287,6 +301,12 @@ input {
   height: 625px;
 }
 
+.footer__logo {
+  display: none;
+  max-width: 98px;
+  max-height: 19px;
+}
+
 .footer__links {
   display: flex;
   justify-content: space-between;
@@ -297,6 +317,7 @@ input {
 .footer__links-list {
   display: flex;
   flex-direction: column;
+  font-weight: 400;
   gap: 24px;
 }
 
@@ -314,4 +335,70 @@ input {
 .footer__inc {
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .offers__caption {
+    margin-top: 24px;
+    font-size: 28px;
+  }
+
+  .offers__hr {
+    display: none;
+  }
+
+  .offers__group {
+    margin-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .col-3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .offers__img-wrapper{
+    margin-bottom: 16px;
+  }
+
+  .offers__text {
+    font-size: 15px;
+  }
+
+  .footer-img {
+    margin-top: 40px;
+  }
+
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .footer__links {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    gap: 16px;
+  }
+
+  .footer__list-heading {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
+  .footer__list-link {
+    display: none;
+  }
+
+  .footer__inc {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
 }
