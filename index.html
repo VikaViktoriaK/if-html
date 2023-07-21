@@ -8,44 +8,77 @@
   <body>
     <div class="top-section">
       <div class="container">
-      <header class="header">
-        <div class="header-logo"></div>
-        <div class="header-sections">
-          <div class="header-links">
-            <a href="#">Stays</a>
-            <a href="#">Attractions</a>
+        <header class="header">
+          <div class="header-logo"></div>
+          <div class="header-sections">
+            <div class="header-links">
+              <a href="#">Stays</a>
+              <a href="#">Attractions</a>
+            </div>
+            <div class="header-buttons">
+              <button class="button-night"></button>
+              <button class="button-account"></button>
+              <button class="button-menu"></button>
+            </div>
           </div>
-          <div class="header-buttons">
-            <button class="button-night"></button>
-            <button class="button-account"></button>
+        </header>
+        <div class="top-content">
+          <h1>Discover stays <br />to live, work or just relax</h1>
+          <form class="form">
+            <div class="form-elements country">
+              <label for="country">Your destination or hotel name</label>
+              <input id="country" type="text" placeholder="New York" />
+            </div>
+            <div class="form-elements date form__desktop-edition">
+              <label for="date">Check-in — Check-out</label>
+              <input
+                id="date"
+                type="text"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+              />
+            </div>
+            <div class="form__mobile-edition">
+              <div class="date-mobile">
+              <div class="check-in">
+                <div class="form-elements">
+                  <label for="date-in">Check-in —</label>
+                  <input id="date-in" type="text" placeholder="Tue 15 Sept —" />
+                </div>
+              </div>
+              <div class="check-out">
+                <div class="form-elements">
+                  <label for="date-out">Check-out</label>
+                  <input id="date-out" type="text" placeholder="Sat 19 Sept" />
+                </div>
+              </div>
+              </div>
+            </div>
+              <div class="form__mobile-edition">
+              <div class="filter-mobile">
+                <div class="form-elements">
+                  <input type="text" placeholder="Adults 2" />
+                </div>
+                <div class="form-elements">
+                  <input type="text" placeholder="Children 0" />
+                </div>
+                <div class="form-elements">
+                  <input type="text" placeholder="Room 1" />
+                </div>
+              </div>
+            </div>
+            <div class="form-elements options form__desktop-edition">
+              <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
+            </div>
+            <button class="form-button">Search</button>
+          </form>
+          <div class="apps">
+            <a
+              class="google"
+              href="https://play.google.com/store/games?hl=ru&gl=US"
+            ></a>
+            <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
           </div>
         </div>
-      </header>
-      <div class="top-content">
-        <h1>Discover stays <br />to live, work or just relax</h1>
-        <form class="form">
-          <div class="form-elements country">
-            <label for="country">Your destination or hotel name</label>
-            <input id="country" type="text" placeholder="New York" />
-          </div>
-          <div class="form-elements date">
-            <label for="date">Check-in — Check-out</label>
-            <input
-              id="date"
-              type="text"
-              placeholder="Tue 15 Sept — Sat 19 Sept"
-            />
-          </div>
-          <div class="form-elements options">
-            <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
-          </div>
-          <button class="form-button">Search</button>
-        </form>
-        <div class="apps">
-          <a class="google" href="https://play.google.com/store/games?hl=ru&gl=US"></a>
-          <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
-        </div>
-      </div>
       </div>
     </div>
     <div class="container-offer">

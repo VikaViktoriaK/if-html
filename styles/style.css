@@ -26,7 +26,6 @@ li {
   list-style-type: none;
 }
 
-
 h1 {
   font-size: 50px;
   font-weight: 500;
@@ -48,14 +47,13 @@ a {
   text-decoration: none;
 }
 
-
 input {
-  outline:none;
+  outline: none;
 }
 
 .top-section {
   height: 100vh;
-  background-image: url("../images/castelmezzano.png") ;
+  background-image: url("../images/castelmezzano.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -94,7 +92,7 @@ input {
   gap: 24px;
 }
 
-.header-buttons{
+.header-buttons {
   display: flex;
   gap: 24px;
 }
@@ -121,13 +119,23 @@ input {
   background-color: transparent;
 }
 
+.button-menu {
+  max-height: 40px;
+  max-width: 40px;
+  background-image: url("../images/menu.svg");
+  background-size: cover;
+  background-position-x: 20px;
+  border: none;
+  background-color: transparent;
+}
+
 .form-button {
   width: 192px;
   height: 64px;
   padding: 0;
   border: none;
   border-radius: 8px;
-  background-color: #3077C6;
+  background-color: #3077c6;
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -155,7 +163,11 @@ input {
 ._form-settings {
   height: 64px;
   padding: 0;
-  border: none;
+  /*border: none;*/
+}
+
+.form__mobile-edition {
+  display: none;
 }
 
 .apps {
@@ -176,6 +188,10 @@ input {
   background-image: url("../images/apps.png");
   background-position-x: 120px;
 }
+
+/*.form__mobile-edition {*/
+/*  display: none;*/
+/*}*/
 
 .form-elements {
   position: relative;
@@ -198,7 +214,7 @@ input {
   color: #000000;
 }
 
-.form-elements input{
+.form-elements input {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -207,7 +223,7 @@ input {
   font-size: 18px;
 }
 
-.form-elements label{
+.form-elements label {
   position: absolute;
   top: -36px;
   left: 15px;
@@ -215,7 +231,7 @@ input {
 }
 
 .form-elements input:focus {
-  border: 3px solid #F5BD41;
+  border: 3px solid #f5bd41;
 }
 
 .hr-offer {
@@ -314,4 +330,72 @@ input {
 .inc {
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .form__desktop-edition {
+    display: none;
+  }
+
+  .form__mobile-edition {
+    display: flex;
+  }
+
+  .item-country {
+    grid-area: country;
+  }
+
+  .item-check-in {
+    grid-area: check-in;
+  }
+
+  .item-check-out {
+    grid-area: check-out;
+  }
+
+  .item-filter {
+    grid-area: filter-mobile;
+  }
+
+  .item-button {
+    grid-area: form-button;
+  }
+
+  .form {
+    /*height: 232px;*/
+    background-color: #F5BD41;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "country country country country"
+      "check-in check-in check-out check-out"
+      "filter-mobile filter-mobile filter-mobile filter-mobile"
+      "button button button button";
+  }
+
+  .country {
+    width: 100%;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  ._form-settings {
+    border: solid 1px black;
+  }
 }
