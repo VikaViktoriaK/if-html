@@ -95,11 +95,12 @@ input {
 .header-buttons {
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .button-night {
-  min-height: 30px;
-  min-width: 30px;
+  height: 40px;
+  width: 30px;
   background-image: url("../images/logo-more.png");
   background-size: cover;
   background-position-x: 71px;
@@ -108,10 +109,8 @@ input {
 }
 
 .button-account {
-  max-height: 40px;
-  max-width: 40px;
   background-image: url("../images/logo-more.png");
-  width: 277px;
+  width: 40px;
   height: 40px;
   background-size: cover;
   background-position-x: 40px;
@@ -120,13 +119,14 @@ input {
 }
 
 .button-menu {
-  max-height: 40px;
-  max-width: 40px;
+  width: 24px;
+  height: 16px;
   background-image: url("../images/menu.svg");
   background-size: cover;
   background-position-x: 20px;
   border: none;
   background-color: transparent;
+  display: none;
 }
 
 .form-button {
@@ -188,10 +188,6 @@ input {
   background-image: url("../images/apps.png");
   background-position-x: 120px;
 }
-
-/*.form__mobile-edition {*/
-/*  display: none;*/
-/*}*/
 
 .form-elements {
   position: relative;
@@ -341,9 +337,16 @@ input {
   h1 {
     font-size: 30px;
   }
+  .top-content {
+    margin-top: 40px;
+  }
 
   .header-links {
     display: none;
+  }
+
+  .button-menu {
+    display: block;
   }
 
   .form__desktop-edition {
@@ -354,37 +357,16 @@ input {
     display: flex;
   }
 
-  .item-country {
-    grid-area: country;
-  }
-
-  .item-check-in {
-    grid-area: check-in;
-  }
-
-  .item-check-out {
-    grid-area: check-out;
-  }
-
-  .item-filter {
-    grid-area: filter-mobile;
-  }
-
-  .item-button {
-    grid-area: form-button;
-  }
-
   .form {
-    /*height: 232px;*/
+    width: 100%;
+    height: 100%;
     background-color: #F5BD41;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "country country country country"
-      "check-in check-in check-out check-out"
-      "filter-mobile filter-mobile filter-mobile filter-mobile"
-      "button button button button";
+    margin: 30px 0;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 0;
   }
 
   .country {
@@ -395,7 +377,83 @@ input {
     width: 100%;
   }
 
-  ._form-settings {
-    border: solid 1px black;
+  .form__mobile-edition {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
+
+  .date-mobile {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .filter-mobile {
+    display: flex;
+  }
+
+  .form-elements {
+    height: 48px;
+    width: 100%;
+  }
+
+  .form-name {
+    padding-left: 30px;
+  }
+
+  .form-elements input{
+    border-radius: 4px;
+    /*background-repeat: no-repeat;*/
+    /*background-size: 16px;*/
+    /*background-position: 8px 15px;*/
+    padding-left: 8px;
+  }
+
+  .input-country {
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 8px 15px;
+    padding-left: 24px;
+  }
+
+  ._form-padding {
+    padding-top: 15px;
+  }
+
+  .form-elements-border {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-radius: 0;
+  }
+
+  .form-elements input:focus {
+    border: none;
+  }
+
+  .check-in {
+    width: 100%;
+  }
+
+  .check-out {
+    width: 100%;
+  }
+
+  .form-elements label {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    padding-top: 6px;
+    padding-left: 8px;
+    color: #383838;
+    font-size: 12px;
+    font-weight: 400;
+    transform: scale(1.2) translateY(-.75rem) translateX(.15rem);
+  }
+
+  .adults {
+    border-radius: 4px 0 0 4px;
+  }
+
 }

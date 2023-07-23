@@ -25,7 +25,7 @@
         <div class="top-content">
           <h1>Discover stays <br />to live, work or just relax</h1>
           <form class="form">
-            <div class="form-elements country">
+            <div class="form-elements country form__desktop-edition">
               <label for="country">Your destination or hotel name</label>
               <input id="country" type="text" placeholder="New York" />
             </div>
@@ -38,31 +38,37 @@
               />
             </div>
             <div class="form__mobile-edition">
+              <div class="form-elements country">
+                <input class="input-country" type="text" style="background-image: url(./images/vector.svg)" placeholder="Your destination or hotel name" />
+              </div>
               <div class="date-mobile">
               <div class="check-in">
                 <div class="form-elements">
-                  <label for="date-in">Check-in —</label>
-                  <input id="date-in" type="text" placeholder="Tue 15 Sept —" />
+                  <label for="date-in">Check-in date</label>
+                  <input id="date-in" type="text" placeholder="Tue 15 Sept 2020" />
                 </div>
               </div>
               <div class="check-out">
                 <div class="form-elements">
-                  <label for="date-out">Check-out</label>
-                  <input id="date-out" type="text" placeholder="Sat 19 Sept" />
+                  <label for="date-out">Check-out date</label>
+                  <input id="date-out" type="text" placeholder="Sat 19 Sept 2020" />
                 </div>
               </div>
               </div>
             </div>
-              <div class="form__mobile-edition">
+            <div class="form__mobile-edition">
               <div class="filter-mobile">
-                <div class="form-elements">
-                  <input type="text" placeholder="Adults 2" />
+                <div class="form-elements adults">
+                  <label for="adults">Adults</label>
+                  <input id="adults" type="text" placeholder="2" />
+                </div>
+                <div class="form-elements form-elements-border">
+                  <label for="children">Children</label>
+                  <input id="children" type="text" placeholder="0" />
                 </div>
                 <div class="form-elements">
-                  <input type="text" placeholder="Children 0" />
-                </div>
-                <div class="form-elements">
-                  <input type="text" placeholder="Room 1" />
+                  <label for="room">Room</label>
+                  <input id="room" type="text" placeholder="1" />
                 </div>
               </div>
             </div>
@@ -87,25 +93,25 @@
       <div class="offers-group">
         <div class="offers-item">
           <div class="img-wrapper">
-            <img src="../images/headph.png" alt="headphone" />
+            <img src="./images/headph.png" alt="headphone" />
           </div>
           <p class="text-offer">Support 24/7</p>
         </div>
         <div class="offers-item">
           <div class="img-wrapper">
-            <img src="../images/message.png" alt="message" />
+            <img src="./images/message.png" alt="message" />
           </div>
           <p class="text-offer">Communicate directly</p>
         </div>
         <div class="offers-item">
           <div class="img-wrapper">
-            <img src="../images/laptop.png" alt="laptop" />
+            <img src="./images/laptop.png" alt="laptop" />
           </div>
           <p class="text-offer">Book online</p>
         </div>
         <div class="offers-item">
           <div class="img-wrapper">
-            <img src="../images/cool.png" alt="cool" />
+            <img src="./images/cool.png" alt="cool" />
           </div>
           <p class="text-offer">Real guest reviews</p>
         </div>
