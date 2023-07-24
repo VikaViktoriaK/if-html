@@ -41,6 +41,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+h2:hover {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #F5BD41;
+}
+
 a {
   font-size: 24px;
   font-weight: 400;
@@ -92,6 +97,25 @@ input {
 .header-links {
   display: flex;
   gap: 24px;
+}
+
+.stays-link {
+  position: absolute;
+}
+
+.stays-link:hover {
+  padding-bottom: 12px;
+  border-bottom: 4px solid #F5BD41;
+}
+
+.attractions-link {
+  position: absolute;
+}
+
+.attractions-link:hover {
+  position: fixed;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #F5BD41;
 }
 
 .header-buttons{
@@ -219,7 +243,7 @@ input {
 }
 
 .hr-offer {
-  background-color: #f5bd41;
+  background-color: #F5BD41;
   width: 100px;
   height: 4px;
   border: none;
