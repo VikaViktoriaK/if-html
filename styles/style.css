@@ -391,6 +391,9 @@ input {
 
   .filter-mobile {
     display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
   }
 
   .form-elements {
@@ -404,52 +407,54 @@ input {
 
   .form-elements input{
     border-radius: 4px;
-    /*background-repeat: no-repeat;*/
-    /*background-size: 16px;*/
-    /*background-position: 8px 15px;*/
     padding-left: 8px;
+    padding-top: 15px;
   }
 
-  .input-country {
+  .input-country.input-country {
     border-radius: 4px;
     background-repeat: no-repeat;
     background-size: 16px;
     background-position: 8px 15px;
-    padding-left: 24px;
+    padding-left: 36px;
+    padding-top: 0;
   }
 
   ._form-padding {
     padding-top: 15px;
   }
 
-  .form-elements-border {
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-radius: 0;
-  }
-
-  .form-elements input:focus {
+  .form input:focus {
     border: none;
   }
 
-  .check-in {
-    width: 100%;
+  .form input {
+    border: none;
   }
 
-  .check-out {
-    width: 100%;
+  .separator {
+    background-color: #BFBFBF;
+    height: 32px;
+    width: 1px;
   }
+
+  /*.check-in {*/
+  /*  width: 100%;*/
+  /*  height: 48px;*/
+  /*}*/
+
+  /*.check-out {*/
+  /*  width: 100%;*/
+  /*  height: 48px;*/
+  /*}*/
 
   .form-elements label {
     position: absolute;
-    top: 1px;
+    top: 6px;
     left: 8px;
-    padding-top: 6px;
-    padding-left: 8px;
     color: #383838;
     font-size: 12px;
     font-weight: 400;
-    transform: scale(1.2) translateY(-.75rem) translateX(.15rem);
   }
 
   .adults {
