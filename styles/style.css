@@ -37,7 +37,7 @@ h2 {
   font-weight: 500;
   text-align: center;
   padding-top: 120px;
-  margin-bottom: 104px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -235,6 +235,19 @@ input {
   border: 3px solid #f5bd41;
 }
 
+.hr {
+  width: 100px;
+  height: 4px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+h2 {
+  cursor: pointer;
+}
+h2:hover + .hr {
+  background-color: #f5bd41;
+}
+
 .hr-offer {
   background-color: #f5bd41;
   width: 100px;
@@ -300,19 +313,21 @@ input {
 }
 
 .homes-loves {
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
 }
 
 .homes-group {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 120px;
   padding-bottom: 114px;
-  background-color: #EAF0F9;
+  margin-top: 80px;
+  background-color: #eaf0f9;
 }
 
 .homes-item {
+  width: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -371,4 +386,33 @@ input {
 .inc {
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .homes-item:nth-last-child(2n) {
+    display: none;
+  }
+
+  h2 {
+    font-size: 28px;
+    padding-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  .homes-item {
+    display: flex;
+    gap: 8px;
+  }
+
+  .text-homes {
+    font-size: 12px;
+  }
+
+  .text-country-homes {
+    font-size: 12px;
+  }
 }
