@@ -10,13 +10,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  max-width: 1264px;
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -25,7 +18,6 @@ ul {
 li {
   list-style-type: none;
 }
-
 
 h1 {
   font-size: 50px;
@@ -48,14 +40,20 @@ a {
   text-decoration: none;
 }
 
-
 input {
-  outline:none;
+  outline: none;
+}
+
+.container {
+  max-width: 1264px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .top-section {
   height: 100vh;
-  background-image: url("../images/castelmezzano.png") ;
+  background-image: url("../images/castelmezzano.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -94,7 +92,7 @@ input {
   gap: 24px;
 }
 
-.header__buttons{
+.header__buttons {
   display: flex;
   gap: 24px;
 }
@@ -152,7 +150,7 @@ input {
   padding: 0;
   border: none;
   border-radius: 8px;
-  background-color: #3077C6;
+  background-color: #3077c6;
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -198,7 +196,7 @@ input {
   color: #000000;
 }
 
-.form__elements input{
+.form__elements input {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -207,7 +205,7 @@ input {
   font-size: 18px;
 }
 
-.form__elements label{
+.form__elements label {
   position: absolute;
   top: -36px;
   left: 15px;
@@ -215,7 +213,7 @@ input {
 }
 
 .form__elements input:focus {
-  border: 3px solid #F5BD41;
+  border: 3px solid #f5bd41;
 }
 
 .offers__hr {
