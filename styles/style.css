@@ -38,6 +38,7 @@ h2 {
   text-align: center;
   padding-top: 120px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 a {
@@ -90,25 +91,25 @@ input {
 .header-links {
   display: flex;
   gap: 24px;
+  cursor: pointer;
 }
 
-.stays-link {
-  position: absolute;
+.link-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.stays-link:hover {
-  padding-bottom: 12px;
-  border-bottom: 4px solid #f5bd41;
+.hr-links {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+display: none;
 }
 
-.attractions-link {
-  position: absolute;
-}
-
-.attractions-link:hover {
-  position: fixed;
-  padding-bottom: 12px;
-  border-bottom: 4px solid #f5bd41;
+.link-block:hover + hr{
+  display: block;
 }
 
 .header-buttons {
@@ -231,29 +232,15 @@ input {
   color: #ffffff;
 }
 
-.form-elements input:focus {
-  border: 3px solid #f5bd41;
-}
-
-.hr {
+.hr-heading {
   width: 100px;
   height: 4px;
   background-color: transparent;
   margin: 0 auto;
 }
-h2 {
-  cursor: pointer;
-}
-h2:hover + .hr {
-  background-color: #f5bd41;
-}
 
-.hr-offer {
+h2:hover + .hr-heading {
   background-color: #f5bd41;
-  width: 100px;
-  height: 4px;
-  border: none;
-  margin: 0 auto;
 }
 
 .offers-group {
@@ -345,14 +332,19 @@ h2:hover + .hr {
   color: #bfbfbf;
 }
 
-/*.homes-button {*/
-/*  min-height: 40px;*/
-/*  min-width: 40px;*/
-/*  background-image: url("../images/arrow.svg");*/
-/*  background-repeat: no-repeat;*/
-/*  border: none;*/
-/*  background-color: transparent;*/
-/*}*/
+.homes-button {
+  min-height: 40px;
+  min-width: 40px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 130px;
+  right: 40px;
+  margin: 0;
+}
 
 .footer {
   background-color: #10367c;
