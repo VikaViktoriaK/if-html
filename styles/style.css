@@ -105,10 +105,10 @@ input {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
-display: none;
+  display: none;
 }
 
-.link-block:hover + hr{
+.link-block:hover + hr {
   display: block;
 }
 
@@ -334,7 +334,7 @@ h2:hover + .hr-heading {
 
 .homes-button {
   min-height: 40px;
-  min-width: 40px;
+  min-width: 50px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   padding: 0;
