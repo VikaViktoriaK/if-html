@@ -282,6 +282,38 @@ input {
   font-weight: 400;
 }
 
+.sign-up {
+  background-color: #EAF0F9;
+  display: flex;
+  padding: 51px 24px;
+}
+
+.sign-content {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-left: 24px;
+}
+
+.sign-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sign-button {
+  padding: 12px 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3077C6;
+  border: solid 1px #3077C6;
+}
+.button-close {
+  border: none;
+  background-color: transparent;
+}
+
 .footer {
   background-color: #10367c;
   height: 625px;
