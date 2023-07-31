@@ -282,6 +282,83 @@ input {
   font-weight: 400;
 }
 
+.destinations-content {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.destinations-buttons {
+  display: flex;
+  width: 50%;
+  height: 64px;
+  background-color: #F3F3F4;
+}
+
+.button-region {
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  padding: 17px 53px 17px 52px;
+  color: #383838;
+  background-color: #F3F3F4;
+}
+
+.button-region:hover {
+  color: #ffffff;
+  background-color: #3077C6;
+  transition: 0.8s;
+}
+
+.button-places {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  color: #383838;
+  background-color: #F3F3F4;
+}
+.button-places:hover {
+  color: #ffffff;
+  background-color: #3077C6;
+  transition: 0.8s;
+}
+
+
+.destinations-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.destinations-element {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.destinations-effect {
+  background-color: #38383866;
+}
+
+.open-block {
+  display: flex;
+  gap: 14px;
+}
+
+.close-block {
+  display: flex;
+  gap: 14px;
+}
+
+.destinations-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3077C6;
+}
+
 .sign-up {
   background-color: #EAF0F9;
   display: flex;
@@ -312,6 +389,9 @@ input {
 .button-close {
   border: none;
   background-color: transparent;
+  position: relative;
+  top: -64px;
+  left: 50%;
 }
 
 .footer {
