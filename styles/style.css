@@ -292,7 +292,9 @@ input {
   display: flex;
   width: 50%;
   height: 64px;
+  border-radius: 8px;
   background-color: #F3F3F4;
+  margin-top: 80px;
 }
 
 .button-region {
@@ -306,6 +308,22 @@ input {
 }
 
 .button-region:hover {
+  color: #ffffff;
+  background-color: #3077C6;
+  transition: 0.8s;
+}
+
+.button-cities {
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  padding: 17px 53px 17px 52px;
+  color: #383838;
+  background-color: #F3F3F4;
+}
+
+.button-cities:hover {
   color: #ffffff;
   background-color: #3077C6;
   transition: 0.8s;
@@ -325,7 +343,6 @@ input {
   background-color: #3077C6;
   transition: 0.8s;
 }
-
 
 .destinations-blocks {
   display: flex;
@@ -359,6 +376,26 @@ input {
   color: #3077C6;
 }
 
+/*.close-block {*/
+/*  display: none;*/
+/*}*/
+
+.down-button:focus ~ .close-block {
+  display: none;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 121px;
+}
+
+.down-button {
+  border: none;
+  background-color: transparent;
+}
+
 .sign-up {
   background-color: #EAF0F9;
   display: flex;
@@ -378,6 +415,7 @@ input {
 }
 
 .sign-button {
+  max-width: 128px;
   padding: 12px 32px;
   border-radius: 8px;
   background-color: #ffffff;
