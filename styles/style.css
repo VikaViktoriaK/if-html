@@ -280,6 +280,120 @@ input {
   font-weight: 400;
 }
 
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews-blocks {
+  display: flex;
+  gap: 16px;
+  margin-top: 104px;
+}
+
+.reviews-card {
+  background-color: #EAF0F9;
+  width: 400px;
+  height: 760px;
+}
+
+.review-image {
+  position: relative;
+}
+
+.card-info {
+  padding: 24px 24px;
+}
+
+.review-price {
+  width: 400px;
+  background-color: #383838B2;
+  color: #ffffff;
+  padding: 16px 0 11px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 2px;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-links a{
+  color: #3077C6;
+  font-size: 18px;
+}
+
+.card-links a:first-child {
+  font-weight: 500;
+}
+
+.card-links a:last-child {
+  font-weight: 400;
+}
+
+.nav-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: end;
+}
+
+.rating {
+  width: 48px;
+  height: 32px;
+  padding: 4px 11px;
+  background-color: #10367c;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-rating span:last-child{
+  font-size: 14px;
+  font-weight: 400;
+  color: #BFBFBF;
+}
+
+.user-block {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0 17px 0;
+}
+
+.user-image {
+  width: 54px;
+  height: 54px;
+}
+
+.user-block span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.user-block span:last-child {
+  color: #BFBFBF;
+}
+
+.review-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .footer {
   background-color: #10367c;
   height: 625px;
@@ -312,4 +426,59 @@ input {
 .footer__inc {
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  .reviews {
+    background-color: #EAF0F9;
+  }
+
+  .reviews-blocks {
+    margin-top: 32px;
+  }
+
+  .reviews-swipe {
+    display: none;
+  }
+
+  .review-price {
+    display: none;
+  }
+
+  .card-links a {
+    font-size: 15px;
+  }
+
+  .rating {
+    width: 39px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+  .nav-rating span:last-child{
+    font-size: 12px;
+  }
+
+  .user-image {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-block span {
+    font-size: 15px;
+  }
+
+  .review-text {
+    font-size: 15px;
+  }
 }
