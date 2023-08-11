@@ -445,6 +445,11 @@ input {
     margin-top: 32px;
   }
 
+  .hz {
+    width: 43px;
+    height: 43px;
+  }
+
   .reviews-swipe {
     display: none;
   }
