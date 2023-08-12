@@ -395,6 +395,10 @@ input {
   gap: 8px;
 }
 
+.switch-block {
+  display: none;
+}
+
 .reviews-switch {
   display: flex;
   gap: 8px;
@@ -505,5 +509,9 @@ input {
 
   .review-text {
     font-size: 15px;
+  }
+
+  .switch-block {
+    display: block;
   }
 }
