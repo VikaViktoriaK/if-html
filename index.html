@@ -39,7 +39,8 @@
               />
             </div>
             <div class="form__elements options">
-              <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
+              <label for="people"></label>
+              <input id="people" type="text" placeholder="2 Adults — 0 Children — 1 Room"/>
             </div>
             <button class="form__button">Search</button>
           </form>
@@ -151,7 +152,7 @@
                 </div>
               </div>
               <div class="user-block">
-                <div class="hz">
+                <div class="user-image">
                   <svg
                     viewBox="0 0 54 54"
                     fill="none"
@@ -165,7 +166,25 @@
                 </div>
                 <div class="user-info">
                   <span class="user-name">Hanna Ivanova</span>
-                  <span class="user-country">&#127482;&#127462; Ukraine</span>
+                  <div class="user-country">
+                    <svg
+                      width="17"
+                      height="15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#a)">
+                        <path d="M0 0h17v14.9997H0V0Z" fill="#FFDA44" />
+                        <path d="M0 0h17v7.4999H0V0Z" fill="#338AF3" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h17v15H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="user-country">Ukraine</span>
+                  </div>
                 </div>
               </div>
               <p class="review-text">
@@ -175,6 +194,12 @@
                 people are incredibly helpful and generous <br />
                 with their time and advice.
               </p>
+            </div>
+            <div class="reviews-switch">
+              <div class="switch-circle switch-circle-active"></div>
+              <div class="switch-circle"></div>
+              <div class="switch-circle"></div>
+              <div class="switch-circle"></div>
             </div>
           </div>
           <div class="reviews-card reviews-swipe">
