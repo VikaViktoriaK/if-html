@@ -115,6 +115,7 @@ input {
 .header-buttons {
   display: flex;
   gap: 24px;
+  cursor: pointer;
 }
 
 .button-night {
@@ -125,6 +126,7 @@ input {
   background-position-x: 71px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button-account {
@@ -137,6 +139,7 @@ input {
   background-position-x: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .form-button {
@@ -149,6 +152,7 @@ input {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .form {
@@ -344,6 +348,7 @@ h2:hover + .hr-heading {
   top: 130px;
   right: 40px;
   margin: 0;
+  cursor: pointer;
 }
 
 .footer {
