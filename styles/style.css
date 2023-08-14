@@ -92,6 +92,18 @@ input {
   gap: 24px;
 }
 
+.header-links a {
+  border-bottom: solid 4px transparent;
+}
+
+.link-stays:hover {
+  border-bottom: solid 4px #f5bd41;
+}
+
+.link-attractions:hover {
+  border-bottom: solid 4px #f5bd41;
+}
+
 .header-buttons {
   display: flex;
   gap: 24px;
