@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -10,28 +9,27 @@
     <div class="top-section">
       <div class="container">
         <header class="header">
-          <div class="header__logo"></div>
-          <div class="header__sections">
-            <div class="header__links">
+          <div class="header-logo"></div>
+          <div class="header-sections">
+            <div class="header-links">
               <a href="#">Stays</a>
               <a href="#">Attractions</a>
             </div>
             <div class="header-buttons">
-              <button class="header-buttons__night"></button>
-              <button class="header-buttons__account"></button>
+              <button class="button-night"></button>
+              <button class="button-account"></button>
+              <button class="button-menu"></button>
             </div>
           </div>
         </header>
         <div class="top-content">
-          <h1 class="top-content__caption">
-            Discover stays <br />to live, work or just relax
-          </h1>
+          <h1>Discover stays <br />to live, work or just relax</h1>
           <form class="form">
-            <div class="form__elements country">
+            <div class="form-elements country form__desktop-edition">
               <label for="country">Your destination or hotel name</label>
               <input id="country" type="text" placeholder="New York" />
             </div>
-            <div class="form__elements date">
+            <div class="form-elements date form__desktop-edition">
               <label for="date">Check-in — Check-out</label>
               <input
                 id="date"
@@ -39,101 +37,93 @@
                 placeholder="Tue 15 Sept — Sat 19 Sept"
               />
             </div>
-            <div class="form__elements options">
+            <div class="form__mobile-edition">
+              <div class="form-elements country">
+                <input
+                  class="input-country"
+                  type="text"
+                  placeholder="Your destination or hotel name"
+                />
+              </div>
+              <div class="date-mobile">
+                <div class="form-elements">
+                  <label for="date-in">Check-in date</label>
+                  <input
+                    id="date-in"
+                    type="text"
+                    placeholder="Tue 15 Sept 2020"
+                  />
+                </div>
+                <div class="form-elements">
+                  <label for="date-out">Check-out date</label>
+                  <input
+                    id="date-out"
+                    type="text"
+                    placeholder="Sat 19 Sept 2020"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form__mobile-edition">
+              <div class="filter-mobile">
+                <div class="form-elements adults">
+                  <label for="adults">Adults</label>
+                  <input id="adults" type="text" placeholder="2" />
+                </div>
+                <div class="separator"></div>
+                <div class="form-elements">
+                  <label for="children">Children</label>
+                  <input id="children" type="text" placeholder="0" />
+                </div>
+                <div class="separator"></div>
+                <div class="form-elements">
+                  <label for="room">Room</label>
+                  <input id="room" type="text" placeholder="1" />
+                </div>
+              </div>
+            </div>
+            <div class="form-elements options form__desktop-edition">
               <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
             </div>
-            <button class="form__button">Search</button>
+            <button class="form-button">Search</button>
           </form>
           <div class="apps">
             <a
-              class="apps__google"
+              class="google"
               href="https://play.google.com/store/games?hl=ru&gl=US"
             ></a>
-            <a
-              class="apps__app-store"
-              href="https://www.apple.com/ru/app-store/"
-            ></a>
+            <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="offers">
-        <h2 class="offers__caption">What do we offer</h2>
-        <hr class="offers__hr" />
-        <div class="offers__group">
-          <div class="col-3">
-            <div class="offers__item">
-              <div class="offers__img-wrapper">
-                <svg
-                  width="76"
-                  height="92"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M67.167 54.333V71h-8.334V54.333h8.334Zm-50 0V71H13a4.179 4.179 0 0 1-4.167-4.167v-12.5h8.334ZM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5Z"
-                    fill="#3077C6"
-                  />
-                </svg>
-              </div>
-              <p class="offers__text">Support 24/7</p>
-            </div>
+    <div class="container-offer">
+      <h2>What do we offer</h2>
+      <hr class="hr-offer" />
+      <div class="offers-group">
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/headph.png" alt="headphone" />
           </div>
-          <div class="col-3">
-            <div class="offers__item">
-              <div class="offers__img-wrapper">
-                <svg
-                  width="100"
-                  height="100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M62.5 16.667v29.166H21.542l-4.875 4.875V16.667H62.5Zm4.167-8.334H12.5A4.179 4.179 0 0 0 8.333 12.5v58.333L25 54.167h41.667A4.179 4.179 0 0 0 70.833 50V12.5a4.179 4.179 0 0 0-4.166-4.167ZM87.5 25h-8.333v37.5H25v8.333A4.179 4.179 0 0 0 29.167 75H75l16.667 16.667v-62.5A4.179 4.179 0 0 0 87.5 25Z"
-                    fill="#3077C6"
-                  />
-                </svg>
-              </div>
-              <p class="offers__text">Communicate directly</p>
-            </div>
+          <p class="text-offer">Support 24/7</p>
+        </div>
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/message.png" alt="message" />
           </div>
-          <div class="col-3">
-            <div class="offers__item">
-              <div class="offers__img-wrapper">
-                <svg
-                  width="100"
-                  height="100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.667 25h75v-8.333h-75c-4.584 0-8.334 3.75-8.334 8.333v45.833H0v12.5h58.333v-12.5H16.667V25Zm79.166 8.333h-25a4.179 4.179 0 0 0-4.166 4.167v41.667a4.179 4.179 0 0 0 4.166 4.166h25A4.179 4.179 0 0 0 100 79.167V37.5a4.179 4.179 0 0 0-4.167-4.167Zm-4.166 37.5H75V41.667h16.667v29.166Z"
-                    fill="#3077C6"
-                  />
-                </svg>
-              </div>
-              <p class="offers__text">Book online</p>
-            </div>
+          <p class="text-offer">Communicate directly</p>
+        </div>
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/laptop.png" alt="laptop" />
           </div>
-          <div class="col-3">
-            <div class="offers__item">
-              <div class="col-3 offers__img-wrapper">
-                <svg
-                  width="100"
-                  height="100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M87.5 33.333H61.208l3.959-19.041.125-1.334a6.272 6.272 0 0 0-1.834-4.416l-4.416-4.375-27.417 27.458a8.147 8.147 0 0 0-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H75a8.277 8.277 0 0 0 7.667-5.083L95.25 53.042A8.232 8.232 0 0 0 95.833 50v-8.333c0-4.584-3.75-8.334-8.333-8.334ZM87.5 50 75 79.167H37.5V37.5l18.083-18.083-4.625 22.25H87.5V50ZM4.167 37.5h16.666v50H4.167v-50Z"
-                    fill="#3077C6"
-                  />
-                </svg>
-              </div>
-              <p class="offers__text">Real guest reviews</p>
-            </div>
+          <p class="text-offer">Book online</p>
+        </div>
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/cool.png" alt="cool" />
           </div>
+          <p class="text-offer">Real guest reviews</p>
         </div>
       </div>
     </div>
