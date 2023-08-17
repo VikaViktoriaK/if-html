@@ -469,6 +469,7 @@ input {
   }
 
   .input-country.input-country {
+    background-image: url(../images/vector.svg);
     border-radius: 4px;
     background-repeat: no-repeat;
     background-size: 16px;
