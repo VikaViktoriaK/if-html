@@ -25,6 +25,7 @@
             <div class="header-buttons">
               <button class="button-night"></button>
               <button class="button-account"></button>
+              <button class="button-menu"></button>
             </div>
           </div>
         </header>
@@ -43,7 +44,52 @@
                 placeholder="Tue 15 Sept — Sat 19 Sept"
               />
             </div>
-            <div class="form-elements options">
+            <div class="form__mobile-edition">
+              <div class="form-elements country">
+                <input
+                  class="input-country"
+                  type="text"
+                  placeholder="Your destination or hotel name"
+                />
+              </div>
+              <div class="date-mobile">
+                <div class="form-elements">
+                  <label for="date-in">Check-in date</label>
+                  <input
+                    id="date-in"
+                    type="text"
+                    placeholder="Tue 15 Sept 2020"
+                  />
+                </div>
+                <div class="form-elements">
+                  <label for="date-out">Check-out date</label>
+                  <input
+                    id="date-out"
+                    type="text"
+                    placeholder="Sat 19 Sept 2020"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form__mobile-edition">
+              <div class="filter-mobile">
+                <div class="form-elements adults">
+                  <label for="adults">Adults</label>
+                  <input id="adults" type="text" placeholder="2" />
+                </div>
+                <div class="separator"></div>
+                <div class="form-elements">
+                  <label for="children">Children</label>
+                  <input id="children" type="text" placeholder="0" />
+                </div>
+                <div class="separator"></div>
+                <div class="form-elements">
+                  <label for="room">Room</label>
+                  <input id="room" type="text" placeholder="1" />
+                </div>
+              </div>
+            </div>
+            <div class="form-elements options form__desktop-edition">
               <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
             </div>
             <button class="form-button">Search</button>
@@ -195,6 +241,19 @@
             <span class="text-country-homes">Berlin, Germany</span>
           </div>
           <button class="homes-button"></button>
+          <p class="text-offer">Communicate directly</p>
+        </div>
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/laptop.png" alt="laptop" />
+          </div>
+          <p class="text-offer">Book online</p>
+        </div>
+        <div class="offers-item">
+          <div class="img-wrapper">
+            <img src="./images/cool.png" alt="cool" />
+          </div>
+          <p class="text-offer">Real guest reviews</p>
         </div>
       </div>
     </div>
