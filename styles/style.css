@@ -38,6 +38,7 @@ h2 {
   text-align: center;
   margin-top: 120px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 a {
@@ -46,6 +47,7 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+
 
 input {
   outline: none;
@@ -90,6 +92,24 @@ input {
 .header-links {
   display: flex;
   gap: 24px;
+  cursor: pointer;
+}
+.link-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hr-links {
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  display: none;
+}
+
+.link-block:hover + hr {
+  display: block;
 }
 
 .header-links a {
@@ -107,14 +127,16 @@ input {
 .header-buttons {
   display: flex;
   gap: 24px;
+  cursor: pointer;
+  align-items: center;
 }
 
 .button-night {
-  min-height: 30px;
-  min-width: 30px;
+  height: 40px;
+  width: 30px;
   background-image: url("../images/logo-more.png");
   background-size: cover;
-  background-position-x: 71px;
+  background-position-x: 70px;
   border: none;
   background-color: transparent;
 }
@@ -129,6 +151,7 @@ input {
   background-position-x: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .form-button {
@@ -141,6 +164,18 @@ input {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.button-menu {
+  width: 24px;
+  height: 16px;
+  background-image: url("../images/menu.svg");
+  background-size: cover;
+  background-position-x: 20px;
+  border: none;
+  background-color: transparent;
+  display: none;
 }
 
 .form {
@@ -165,7 +200,22 @@ input {
 ._form-settings {
   height: 64px;
   padding: 0;
+}
+
+.form__mobile-edition {
+  display: none;
+}
+
+.form__button {
+  width: 192px;
+  height: 64px;
+  padding: 0;
   border: none;
+  border-radius: 8px;
+  background-color: #3077c6;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .apps {
@@ -236,8 +286,13 @@ input {
   margin: 0 auto;
 }
 
+h2:hover + .hr-heading {
+  background-color: #f5bd41;
+}
+
 .offers-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   margin-top: 80px;
@@ -477,6 +532,54 @@ input {
   left: 50%;
 }
 
+.homes-loves {
+  background-color: #eaf0f9;
+}
+
+.homes-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 114px;
+  margin-top: 80px;
+  background-color: #eaf0f9;
+}
+
+.homes-item {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text-homes {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3077c6;
+}
+
+.text-country-homes {
+  font-size: 24px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+
+.homes-button {
+  min-height: 40px;
+  min-width: 50px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 130px;
+  right: 40px;
+  margin: 0;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #10367c;
   height: 625px;
@@ -492,6 +595,7 @@ input {
 .links-list {
   display: flex;
   flex-direction: column;
+  font-weight: 400;
   gap: 24px;
 }
 
@@ -509,6 +613,213 @@ input {
 .inc {
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .top-content {
+    margin-top: 40px;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .button-menu {
+    display: block;
+  }
+
+  .form__desktop-edition {
+    display: none;
+  }
+
+  .form__mobile-edition {
+    display: flex;
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+    background-color: #f5bd41;
+    margin: 30px 0;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 0;
+  }
+
+  .country {
+    width: 100%;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+
+  .form__mobile-edition {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .date-mobile {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .filter-mobile {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  .form-elements {
+    height: 48px;
+    width: 100%;
+  }
+
+  .form-name {
+    padding-left: 30px;
+  }
+
+  .form-elements input {
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-top: 15px;
+  }
+
+  .input-country.input-country {
+    background-image: url(../images/vector.svg);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 8px 15px;
+    padding-left: 36px;
+    padding-top: 0;
+  }
+
+  ._form-padding {
+    padding-top: 15px;
+  }
+
+  .form input:focus {
+    border: none;
+  }
+
+  .form input {
+    border: none;
+  }
+
+  .separator {
+    background-color: #bfbfbf;
+    height: 32px;
+    width: 1px;
+  }
+
+  .form-elements label {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    color: #383838;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .adults {
+    border-radius: 4px 0 0 4px;
+  }
+}
+
+.offers__caption {
+  margin-top: 24px;
+  font-size: 28px;
+}
+
+.offers__hr {
+  display: none;
+}
+
+.offers__group {
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.offers__img-wrapper {
+  margin-bottom: 16px;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.offers__text {
+  font-size: 15px;
+}
+
+.footer-img {
+  padding-top: 40px;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__links {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  gap: 16px;
+}
+
+.footer__list-heading {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.footer__list-link {
+  display: none;
+}
+
+.footer__inc {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.homes-item:nth-last-child(2n) {
+  display: none;
+}
+
+h2 {
+  font-size: 28px;
+  padding-top: 40px;
+  margin-bottom: 32px;
+}
+
+.homes-item {
+  display: flex;
+  gap: 8px;
+}
+
+.text-homes {
+  font-size: 12px;
+}
+
+.text-country-homes {
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 1024px) {
