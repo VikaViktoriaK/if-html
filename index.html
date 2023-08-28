@@ -7,7 +7,97 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-
+  <div class="top-section">
+    <div class="container">
+      <header class="header">
+        <div class="header-logo"></div>
+        <div class="header-sections">
+          <div class="header-links">
+            <a href="#">Stays</a>
+            <a href="#">Attractions</a>
+          </div>
+          <div class="header-buttons">
+            <button class="button-night"></button>
+            <button class="button-account"></button>
+            <button class="button-menu"></button>
+          </div>
+        </div>
+      </header>
+      <div class="top-content">
+        <h1>Discover stays <br />to live, work or just relax</h1>
+        <form class="form">
+          <div class="form-elements country form-desktop-edition">
+            <label for="country">Your destination or hotel name</label>
+            <input id="country" type="text" placeholder="New York" />
+          </div>
+          <div class="form-elements date form-desktop-edition">
+            <label for="date">Check-in — Check-out</label>
+            <input
+                    id="date"
+                    type="text"
+                    placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+          </div>
+          <div class="form-mobile-edition">
+            <div class="form-elements country">
+              <input
+                      class="input-country"
+                      type="text"
+                      placeholder="Your destination or hotel name"
+              />
+            </div>
+            <div class="date-mobile">
+              <div class="form-elements">
+                <label for="date-in">Check-in date</label>
+                <input
+                        id="date-in"
+                        type="text"
+                        placeholder="Tue 15 Sept 2020"
+                />
+              </div>
+              <div class="form-elements">
+                <label for="date-out">Check-out date</label>
+                <input
+                        id="date-out"
+                        type="text"
+                        placeholder="Sat 19 Sept 2020"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-mobile-edition">
+            <div class="filter-mobile">
+              <div class="form-elements adults">
+                <label for="adults">Adults</label>
+                <input id="adults" type="text" placeholder="2" />
+              </div>
+              <div class="separator"></div>
+              <div class="form-elements">
+                <label for="children">Children</label>
+                <input id="children" type="text" placeholder="0" />
+              </div>
+              <div class="separator"></div>
+              <div class="form-elements">
+                <label for="room">Room</label>
+                <input id="room" type="text" placeholder="1" />
+              </div>
+            </div>
+          </div>
+          <div class="form-elements options form-desktop-edition">
+            <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
+          </div>
+          <button class="form-button">Search</button>
+        </form>
+        <div class="apps">
+          <a
+                  class="google"
+                  href="https://play.google.com/store/games?hl=ru&gl=US"
+          ></a>
+          <a class="app-store" href="https://www.apple.com/ru/app-store/"></a>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="container-offer">
       <h2>What do we offer</h2>
       <div class="offers-group">

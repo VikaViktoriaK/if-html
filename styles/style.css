@@ -532,6 +532,7 @@ h2:hover + .hr-heading {
   position: relative;
   top: -64px;
   left: 50%;
+  cursor: pointer;
 }
 
 .homes-loves {
@@ -591,6 +592,7 @@ h2:hover + .hr-heading {
   gap: 16px;
   justify-content: center;
   margin-top: 104px;
+  margin-bottom: 120px;
 }
 
 .reviews-card {
