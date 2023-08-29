@@ -37,13 +37,13 @@ h2 {
 .name-hr {
   width: 100px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: transparent;
   border: none;
   margin: 0 auto;
 }
 
-h2 + .name-hr:hover {
-  background-color: #10367c;
+.name-block + .name-hr:hover {
+  color: #f5bd41;
 }
 
 a {
