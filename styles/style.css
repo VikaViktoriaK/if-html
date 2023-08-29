@@ -42,7 +42,7 @@ h2 {
   margin: 0 auto;
 }
 
-.name-hr + h2:hover {
+h2 + .name-hr:hover {
   background-color: #10367c;
 }
 
@@ -444,6 +444,7 @@ input {
 .open-block {
   display: flex;
   gap: 14px;
+  position: relative;
 }
 
 .close-block {
@@ -470,6 +471,7 @@ input {
 .destinations-button {
   width: 128px;
   height: 48px;
+  display: inline-block;
   background-color: #ffffff;
   color: #3077c6;
   font-size: 18px;
@@ -486,6 +488,22 @@ input {
 .destinations-element:hover .destinations-button {
   opacity: 1;
   transition: 0.3s;
+}
+
+
+.destinations-button-next {
+  min-height: 50px;
+  min-width: 50px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  margin: 0;
+  cursor: pointer;
+  top: 130px;
+  right: -20px;
 }
 
 .close-button {
@@ -551,6 +569,7 @@ input {
   display: flex;
   justify-content: center;
   gap: 16px;
+  position: relative;
   padding-bottom: 114px;
   margin-top: 80px;
   background-color: #eaf0f9;
@@ -581,16 +600,16 @@ input {
 }
 
 .homes-button {
-  min-height: 40px;
+  min-height: 50px;
   min-width: 50px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   padding: 0;
   border: none;
   background-color: transparent;
-  position: relative;
+  position: absolute;
   top: 130px;
-  right: 40px;
+  right: -30px;
   margin: 0;
   cursor: pointer;
 }
@@ -1055,6 +1074,7 @@ input {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    position: relative;
   }
 
   .none-mobile {
