@@ -31,7 +31,19 @@ h2 {
   text-align: center;
   padding-top: 120px;
   margin-bottom: 20px;
-  cursor: auto;
+  cursor: pointer;
+}
+
+.name-hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: none;
+  margin: 0 auto;
+}
+
+.name-hr + h2:hover {
+  background-color: #10367c;
 }
 
 a {
@@ -285,10 +297,6 @@ input {
   height: 4px;
   border: none;
   margin: 0 auto;
-}
-
-h2:hover + .hr-heading {
-  background-color: #f5bd41;
 }
 
 .offers-group {
@@ -884,6 +892,13 @@ h2:hover + .hr-heading {
     font-weight: 400;
   }
 
+  .form-children-border {
+    border-right: 1px solid #BFBFBF;
+    border-right-width: calc(-20px);
+    border-left: 1px solid #BFBFBF;
+    border-left-width: calc(-20px);
+  }
+
   .adults {
     border-radius: 4px 0 0 4px;
   }
@@ -1039,6 +1054,7 @@ h2:hover + .hr-heading {
   .open-block {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .none-mobile {
@@ -1086,6 +1102,7 @@ h2:hover + .hr-heading {
 
   .reviews-blocks {
     margin-top: 32px;
+    margin-bottom: 0;
   }
 
   .user-image {
