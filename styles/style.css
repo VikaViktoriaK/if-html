@@ -490,7 +490,6 @@ input {
   transition: 0.3s;
 }
 
-
 .destinations-button-next {
   min-height: 50px;
   min-width: 50px;
@@ -549,7 +548,8 @@ input {
   font-size: 18px;
   font-weight: 400;
   color: #3077c6;
-  border: solid 1px #3077c6;cursor: pointer;
+  border: solid 1px #3077c6;
+  cursor: pointer;
 }
 
 .button-close {
@@ -590,7 +590,8 @@ input {
 .text-homes {
   font-size: 24px;
   font-weight: 400;
-  color: #3077c6;cursor: pointer;
+  color: #3077c6;
+  cursor: pointer;
 }
 
 .text-country-homes {
@@ -912,9 +913,9 @@ input {
   }
 
   .form-children-border {
-    border-right: 1px solid #BFBFBF;
+    border-right: 1px solid #bfbfbf;
     border-right-width: calc(-20px);
-    border-left: 1px solid #BFBFBF;
+    border-left: 1px solid #bfbfbf;
     border-left-width: calc(-20px);
   }
 
